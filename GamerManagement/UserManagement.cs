@@ -30,7 +30,7 @@ namespace GamerManagement
         {
             if (_isAdded)
             {
-                Console.WriteLine("Gamer deleted");
+                Console.WriteLine("User " + gamer.name + " is deleted");
             }
         }
 
@@ -38,7 +38,7 @@ namespace GamerManagement
         {
             if (_isAdded)
             {
-                Console.WriteLine("Gamer deleted");
+                Console.WriteLine("User " +gamer.name+ " is updated");
             }
         }
     }
