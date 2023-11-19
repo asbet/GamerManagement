@@ -1,5 +1,15 @@
 ﻿using GamerManagement;
+using GamerManagement.Game_Component;
+
 UserManagement userManagement= new UserManagement();
-userManagement.Add(new Gamer() { identityNumber = "11", name = "Betul", surName = "As", birthDate = new DateTime(1999, 11, 10) });
-userManagement.Update(new Gamer() { identityNumber = "11", name = "Betul", surName = "Asd", birthDate = new DateTime(1999, 11, 10) });
-userManagement.Delete(new Gamer() { identityNumber = "11", name = "Betul", surName = "As", birthDate = new DateTime(1999, 11, 10) });
+
+Gamer gamer= new Gamer() { identityNumber = "11", name = "Betul", surName = "As", birthDate = new DateTime(1999, 11, 10) };
+Chars chars = new Chars();
+Snippers snippers = new Snippers(); 
+userManagement.Add(gamer);
+userManagement.Update(gamer);
+userManagement.Delete(gamer);
+
+chars.purchase(gamer);
+snippers.purchase(gamer);
+snippers.updatedPurchase(gamer);    

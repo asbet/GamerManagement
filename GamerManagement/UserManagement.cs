@@ -28,18 +28,14 @@ namespace GamerManagement
 
         public void Delete(Gamer gamer)
         {
-            if (_isAdded)
-            {
-                Console.WriteLine("User " + gamer.name + " is deleted");
-            }
+        Console.WriteLine("User " + gamer.name + " is deleted");
         }
 
         public void Update(Gamer gamer)
         {
-            if (_isAdded)
-            {
-                Console.WriteLine("User " +gamer.name+ " is updated");
-            }
+   
+         Console.WriteLine("User " +gamer.name+ " is updated");
+           
         }
     }
 }
